@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Text.module.scss'
 
-const Text = (props) => {
+const Text = ({bold,normal,...props}) => {
     return (
         <span>
             {props.children}
