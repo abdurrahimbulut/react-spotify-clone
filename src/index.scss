@@ -367,11 +367,12 @@ template {
   font-weight: 700;
 }
 
+/*
 @font-face {
   font-family: spotify-circular;
   src: url('./style/font/CircularSpBook.woff2');
   font-weight: 600;
-}
+}*/
 
 @font-face {
   font-family: spotify-circular;
@@ -390,11 +391,16 @@ body{
   line-height: 20px;
   letter-spacing: .015em;
   font-weight: $glue-font-weight-normal;
-  color: #b3b3b3;
+  color: #fff;
   text-transform: none;
   font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
 }
 #root{
   height: 100vh;
+}
+
+h1,h2,h3,h4,h5,h6,p,span{
+  font-family: inherit;
+  font-weight: inherit;
 }
 

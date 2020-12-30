@@ -10,7 +10,7 @@ function App() {
       <TopBar><h1>TopBar</h1></TopBar>
       <NavBar><h1>Navbar</h1></NavBar>
       <PlayingBar><h1>Playing Bar</h1></PlayingBar>
-      <MainView><h1>Main View</h1></MainView>
+      <MainView/>
       
     </div>
   );
