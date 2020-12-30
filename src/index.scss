@@ -358,7 +358,43 @@ template {
 *
 */
 
+@import './variables.scss';
+
+
+@font-face {
+  font-family: spotify-circular;
+  src: url('./style/font/CircularSpBold.woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: spotify-circular;
+  src: url('./style/font/CircularSpBook.woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: spotify-circular;
+  src: url('./style/font/CircularSpLight.woff2');
+  font-weight: 400;
+}
 
 *,body{
    box-sizing: border-box;
+   font-family: inherit;
 }
+
+body{
+  background-color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .015em;
+  font-weight: $glue-font-weight-normal;
+  color: #b3b3b3;
+  text-transform: none;
+  font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+}
+#root{
+  height: 100vh;
+}
+

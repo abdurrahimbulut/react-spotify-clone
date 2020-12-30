@@ -1,3 +1,8 @@
 .TopBar{
-    background-color: aqua;
+    background-color: transparent;
+    grid-area: main-view;
+    height: 60px;
+    z-index: 2;
+    min-width: 0;
+    pointer-events: none;
 }
