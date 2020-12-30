@@ -1,0 +1,8 @@
+.Main{
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+      "nav-bar main-view buddy-feed"
+      "now-playing-bar now-playing-bar now-playing-bar";
+}
