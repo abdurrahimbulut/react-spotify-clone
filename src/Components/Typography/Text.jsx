@@ -3,7 +3,7 @@ import styles from './Text.module.scss'
 
 const Text = ({bold,normal,...props}) => {
     return (
-        <span>
+        <span className={bold && styles.Bold}>
             {props.children}
         </span>
     )

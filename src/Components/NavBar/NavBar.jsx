@@ -7,7 +7,9 @@ import NavList from './NavList';
 const NavBar = (props) => {
     return (
         <div className={styles.NavBar}> 
-            <Logo width="131px" ></Logo>
+            <div className={styles.NavHeader}>
+                <Logo width="131px" ></Logo>
+            </div>
             <NavList/>
         </div>
     )

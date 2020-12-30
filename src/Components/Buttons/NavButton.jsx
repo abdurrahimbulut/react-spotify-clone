@@ -1,10 +1,10 @@
 import React, { Children } from 'react'
 import Button from './Button'
 import styles from './NavButton.module.scss'
-
-const NavButton = ({href ,children, ...props}) => {
+import cn from 'classnames';
+const NavButton = ({href , selected ,children, ...props}) => {
     return (
-        <Button href={href} className={styles.NavButton} full {...props}>
+        <Button href={href ? href : "#"} className={cn(styles.NavButton,selected && styles.Active)} full {...props}>
             {children}
         </Button>
     )

@@ -1,8 +1,15 @@
 @import '../../variables.scss';
 
 .NavButton{
-    background-color: $navbutton-background-color;
+    background-color: transparent;
     border-radius:4px;
     padding: 0 16px;
     height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Active{
+    background-color: $navbutton-background-color;
 }

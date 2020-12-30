@@ -2,4 +2,14 @@
     //background-color: chartreuse;
     grid-area: nav-bar;
     width: 232px;
+    padding-top: 24px;
+    display: flex;
+    flex-direction:column;
+}
+
+.NavHeader{
+    padding:0px 24px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
 }
