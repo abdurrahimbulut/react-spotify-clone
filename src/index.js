@@ -8,7 +8,9 @@ import {getPlayList} from "./Redux/Actions/playListActions.jsx";
 
 const store = configureStore();
 store.dispatch(getPlayList());
-console.log(store.getState());
+store.subscribe(()=>{
+  console.log(store.getState());
+});
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
