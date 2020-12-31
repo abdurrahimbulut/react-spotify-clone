@@ -1,3 +1,4 @@
+@import '../../variables.scss';
 .List{
     list-style-type: none;
     padding: 0;
@@ -6,8 +7,4 @@
 
 .ListItem{
     padding: 0px 8px;
-
-    svg{
-        margin-right: 16px;
-    }
 }

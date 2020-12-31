@@ -3,6 +3,7 @@ import Button from '../Buttons/Button';
 import Logo from '../Icon/Logo';
 import styles from'./NavBar.module.scss';
 import NavList from './NavList';
+import PlayList from './PlayList';
 
 const NavBar = (props) => {
     return (
@@ -11,6 +12,7 @@ const NavBar = (props) => {
                 <Logo width="131px" ></Logo>
             </div>
             <NavList/>
+            <PlayList />
         </div>
     )
 }

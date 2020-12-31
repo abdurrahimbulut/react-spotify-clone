@@ -1,0 +1,22 @@
+@import '../../variables.scss';
+
+.Title{
+    color: $text-color;
+    margin: 24px $left-sidebar-padding-right 12px $left-sidebar-padding-left;
+    min-height: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: $glue-font-weight-bold;
+}
+
+.List{
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+}
+
+.ListItem{
+    padding: 1px 8px;
+}
