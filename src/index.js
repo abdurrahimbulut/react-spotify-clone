@@ -2,11 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App.jsx';
+import { Provider } from 'react-redux';
+import {configureStore} from './Redux/Store/configureStore.jsx';
+import {getPlayList} from "./Redux/Actions/playListActions.jsx";
 
+const store = configureStore();
+store.dispatch(getPlayList());
+console.log(store.getState());
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 

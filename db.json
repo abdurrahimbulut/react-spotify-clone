@@ -1,14 +1,14 @@
 {
     "play-list": [
       { "id": 1, "title": "Play list 1" , "songs":[
-          {"id":1 , "songName": "Unutamadım","artist":"Barış Manço","imgUrl":"","songUrl":""},
-          {"id":2 , "songName": "Dönence","artist":"Barış Manço","imgUrl":"","songUrl":""},
-          {"id":3 , "songName": "Alla beni pulla beni","artist":"Barış Manço","imgUrl":"","songUrl":""}
+          {"id":1 , "songName": "Unutamadım","artist":"Barış Manço","imgUrl":"/images/baris-manco.jpg","songUrl":"/songs/baris-manco-unutamadim.mp3"},
+          {"id":2 , "songName": "Dönence","artist":"Barış Manço","imgUrl":"/images/baris-manco.jpg","songUrl":"/songs/baris-manco-donence.mp3"},
+          {"id":3 , "songName": "Alla beni pulla beni","artist":"Barış Manço","imgUrl":"/images/baris-manco.jpg","songUrl":"/songs/alla-beni-pulla-beni.mp3"}
           
       ]},
       { "id": 2, "title": "Play list 2" , "songs":[
-        {"id":1 , "songName": "Bende yoluma giderim","artist":"Sezen Aksu","imgUrl":"","songUrl":""},
-        {"id":2 , "songName": "Yetinmeyi bilir misin?","artist":"Sezen Aksu","imgUrl":"","songUrl":""}
+        {"id":1 , "songName": "Bende yoluma giderim","artist":"Sezen Aksu","imgUrl":"/images/sezen-aksu.jpg","songUrl":"/songs/sezen-aksu-ben-de-yoluma-giderim-official-video.mp3"},
+        {"id":2 , "songName": "Yetinmeyi bilir misin?","artist":"Sezen Aksu","imgUrl":"/images/sezen-aksu.jpg","songUrl":"/songs/sezen-aksu-yetinmeyi-bilir-misin-official-video.mp3"}
     ]}
     ]
 }
