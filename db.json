@@ -1,0 +1,13 @@
+{
+    "play-list": [
+      { "id": 1, "title": "Play list 1" , "songs":[
+          {"id":1 , "songName": "Unutamadım","artist":"","imgUrl":"","songUrl":""},
+          {"id":1 , "songName": "Dönence","artist":"","imgUrl":"","songUrl":""}
+      ]},
+      { "id": 1, "title": "Play list 2" , "songs":[
+        {"id":1 , "songName": "","artist":"","imgUrl":"","songUrl":""},
+        {"id":1 , "songName": "","artist":"","imgUrl":"","songUrl":""},
+        {"id":1 , "songName": "","artist":"","imgUrl":"","songUrl":""}
+    ]}
+    ]
+}
