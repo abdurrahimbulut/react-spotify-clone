@@ -13,10 +13,10 @@ const PlayList = () => {
             </h1>
             <ul className={styles.List}>
                 <li className={styles.ListItem}>
-                    <NavButton href="index" ><Add /><Text bold>Çalma Listesi Oluş...</Text></NavButton>
+                    <NavButton href="index" ><Add /><Text shortText bold>Çalma Listesi Oluştur</Text></NavButton>
                 </li>
                 <li className={styles.ListItem}>
-                    <NavButton href="index" ><Like /><Text bold>Beğenilen Şarkılar</Text></NavButton>
+                    <NavButton href="index" ><Like /><Text  shortText bold>Beğenilen Şarkılar</Text></NavButton>
                 </li>
             </ul>
         </div>
