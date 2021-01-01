@@ -6,6 +6,13 @@
     letter-spacing: normal;
 }
 
+.PrimaryColor{
+    color: $text-color-primary !important;
+}
+.SecondColor{
+    color: $text-color !important;
+}
+
 .ShortText{
     display: -webkit-box;
     -webkit-line-clamp: 1;

@@ -4,6 +4,7 @@ import styles from './PlayList.module.scss'
 import NavButton from '../Buttons/NavButton'
 import Like from '../Icon/Like'
 import Add from '../Icon/Add'
+import PlayListItems from './PlayListItems'
 
 const PlayList = () => {
     return (
@@ -19,6 +20,8 @@ const PlayList = () => {
                     <NavButton href="index" ><Like /><Text  shortText bold>Beğenilen Şarkılar</Text></NavButton>
                 </li>
             </ul>
+            <hr className={styles.Hr}/>
+            <PlayListItems></PlayListItems>
         </div>
     )
 }

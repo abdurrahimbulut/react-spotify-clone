@@ -1,0 +1,11 @@
+@import '../../variables.scss';
+
+.List{
+    padding: 8px 0 0 0;
+    list-style-type: none;
+    margin: 8px $left-sidebar-padding-right 8px $left-sidebar-padding-left;
+}
+
+.ListItem{
+    height: 32px;
+}

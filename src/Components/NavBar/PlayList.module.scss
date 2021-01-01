@@ -21,3 +21,10 @@
     padding: 1px 8px;
 }
 
+.Hr{
+    margin: 8px $left-sidebar-padding-right 8px $left-sidebar-padding-left;
+    background-color: #282828;
+    border: none;
+    height: 1px;
+    min-height: 1px;
+}
