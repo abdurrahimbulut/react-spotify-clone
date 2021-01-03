@@ -11,13 +11,13 @@ const NavList = () => {
     return (
         <ul className={styles.List}>
             <li className={styles.ListItem}>
-                <NavButton href="index" selected ><HomeActive /><Text bold>Ana sayfa</Text></NavButton>
+                <NavButton href="/index" selected ><HomeActive /><Text bold>Ana sayfa</Text></NavButton>
             </li>
             <li className={styles.ListItem}>
-                <NavButton href="index" ><Search /><Text bold>Ara</Text></NavButton>
+                <NavButton href="/index" ><Search /><Text bold>Ara</Text></NavButton>
             </li>
             <li className={styles.ListItem}>
-                <NavButton href="index" ><Collection /><Text bold>Kitaplığın</Text></NavButton>
+                <NavButton href="/index" ><Collection /><Text bold>Kitaplığın</Text></NavButton>
             </li>
         </ul>
     )

@@ -4,13 +4,20 @@ import './index.scss';
 import App from './App.jsx';
 import { Provider } from 'react-redux';
 import {configureStore} from './Redux/Store/configureStore.jsx';
-import {getPlayList} from "./Redux/Actions/playListActions.jsx";
+import {getPlayList, getPlayListById} from "./Redux/Actions/playListActions.jsx";
 
 const store = configureStore();
-store.dispatch(getPlayList());
-/*store.subscribe(()=>{
+
+
+//store.dispatch(getPlayListById(1));
+
+/*
+store.subscribe(()=>{
   console.log(store.getState());
-});*/
+});
+*/
+
+
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>

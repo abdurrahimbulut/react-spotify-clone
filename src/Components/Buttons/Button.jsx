@@ -4,13 +4,14 @@ import {
   } from "react-router-dom";
 import cn from 'classnames';
 import styles from './Button.module.scss';
+import { useEffect } from "react";
 
 
 const LinkButton = ({href, children,...props}) => {
+
     return (
         <Link  to={href} {...props} >
             {children}
-            
         </Link>
     )
 }
