@@ -9,7 +9,7 @@ const navbarSelectedItemReducer=(state=navbarState,action)=>{
         case CHANGE_SELECTED_ITEM:
             return {
                 ...state,
-                selected:payload
+                selected:action.payload
             };
         default:
             return state;

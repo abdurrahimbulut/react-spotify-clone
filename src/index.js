@@ -4,12 +4,12 @@ import './index.scss';
 import App from './App.jsx';
 import { Provider } from 'react-redux';
 import {configureStore} from './Redux/Store/configureStore.jsx';
-import {getPlayList, getPlayListById} from "./Redux/Actions/playListActions.jsx";
+//import {getPlayList, getPlayListById} from "./Redux/Actions/playListActions.jsx";
+//import { isSelected } from "./Redux/Actions/NavbarActions";
 
 const store = configureStore();
 
-console.log(window.location);
-//store.dispatch(getPlayListById(1));
+//store.dispatch(isSelected("/search"));
 
 /*
 store.subscribe(()=>{
