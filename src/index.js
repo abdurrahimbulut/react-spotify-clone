@@ -8,7 +8,7 @@ import {getPlayList, getPlayListById} from "./Redux/Actions/playListActions.jsx"
 
 const store = configureStore();
 
-
+console.log(window.location);
 //store.dispatch(getPlayListById(1));
 
 /*

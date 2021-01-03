@@ -11,6 +11,9 @@ import {
 } from "react-router-dom";
 import IndexPage from './Pages/IndexPage';
 import PlayListPage from './Pages/PlayListPage';
+import CollectionPage from "./Pages/CollectionPage";
+import SearchPage from "./Pages/SearchPage";
+
 
 function App() {
   return (
@@ -22,6 +25,8 @@ function App() {
         <MainView>
           <Switch>
             <Route path={"/"} component={IndexPage} exact />
+            <Route path={"/search"} component={SearchPage} />
+            <Route path={"/collection"} component={CollectionPage}  />
             <Route path={'/playlist/:id'} component={PlayListPage} />
           </Switch>
         </MainView>

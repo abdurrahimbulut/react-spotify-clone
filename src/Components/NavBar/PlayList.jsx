@@ -21,7 +21,7 @@ const PlayList = () => {
                 </li>
             </ul>
             <hr className={styles.Hr}/>
-            <PlayListItems></PlayListItems>
+            <PlayListItems />
         </div>
     )
 }

@@ -4,8 +4,7 @@ import {
     FETCH_PLAY_LIST_ERROR,
     FETCH_PLAY_LIST_BY_ID_START,
     RECEIVE_PLAY_LIST_BY_ID,
-    FETCH_PLAY_LIST_BY_ID_ERROR,
-    
+    FETCH_PLAY_LIST_BY_ID_ERROR
 } from "../Actions/playListActions";
 
 const playList = {
@@ -15,7 +14,7 @@ const playList = {
     playList : []
 }
 
-const playListReducers=(state=playList,action)=>{
+const playListReducer=(state=playList,action)=>{
     switch (action.type) {
         case FETCH_PLAY_LIST_START:
             return {
@@ -49,7 +48,7 @@ const  playListDetails ={
     details : {}
 }
 
-const playListDetailsReducers=(state=playListDetails,action)=>{
+const playListDetailsReducer=(state=playListDetails,action)=>{
     switch (action.type) {
         case FETCH_PLAY_LIST_BY_ID_START:
             return {
@@ -75,6 +74,6 @@ const playListDetailsReducers=(state=playListDetails,action)=>{
 }
 
 export {
-    playListReducers,
-    playListDetailsReducers
+    playListReducer,
+    playListDetailsReducer
 };

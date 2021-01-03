@@ -4,11 +4,11 @@ import Text from '../Typography/Text'
 import styles from './PlayListItems.module.scss'
 import {useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux'
-import {getPlayList} from "../../Redux/Actions/playListActions"
+import {getPlayList, getPlayListById} from "../../Redux/Actions/playListActions"
 
 
 const PlayListItems = () => {
-    const playList = useSelector(state => state.playListReducers.playList);
+    const playList = useSelector(state => state.playListReducer.playList);
     const dispatch = useDispatch();
     useEffect(()=>{
         dispatch(getPlayList());
@@ -19,7 +19,7 @@ const PlayListItems = () => {
             <ul className={styles.List}>
                 {
                     playList.map((pl)=>(
-                        <li key={pl.id} className={styles.ListItem}> <Button href={`/playlist/${pl.id}`} ><Text secondColor  >{pl.title}</Text></Button> </li>
+                        <li key={pl.id} className={styles.ListItem}> <Button onClick={()=>dispatch(getPlayListById(pl.id))} href={`/playlist/${pl.id}`} ><Text secondColor  >{pl.title}</Text></Button> </li>
                     ))
                 }
             </ul>

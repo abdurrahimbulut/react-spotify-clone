@@ -6,7 +6,7 @@ import {getPlayListById} from "../Redux/Actions/playListActions.jsx"
 const PlayListPage = () => {
     let {id}=useParams();
     const dispatch = useDispatch();
-    const playListDetails = useSelector(state => state.playListDetailsReducers);
+    const playListDetails = useSelector(state => state.playListDetailsReducer);
     const details = playListDetails.details;
     useEffect(()=>{
         dispatch(getPlayListById(id));
