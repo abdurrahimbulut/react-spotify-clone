@@ -1,0 +1,21 @@
+.Header{
+    height: 340px;
+    position: relative;
+    //background: linear-gradient(rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1));
+}
+
+
+.HeaderBack{
+    position: absolute;
+    background-color: rgb(83, 83, 83);
+    height: 100%;
+    width: 100%;
+}
+
+.HeaderContent{
+    position: absolute;
+    background: linear-gradient(transparent,rgba(0,0,0,.5));
+    height: 100%;
+    width: 100%;
+
+}

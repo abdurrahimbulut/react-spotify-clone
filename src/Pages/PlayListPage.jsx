@@ -2,6 +2,7 @@ import {React,useEffect} from 'react';
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux'
 import {getPlayListById} from "../Redux/Actions/playListActions.jsx"
+import PlayListHeader from '../Components/PlayList/PlayListHeader.jsx';
 
 const PlayListPage = () => {
     let {id}=useParams();
@@ -14,10 +15,15 @@ const PlayListPage = () => {
 
     return (
         <div>
-            <h1>{details.title}</h1>
+            <PlayListHeader></PlayListHeader>
+
+            <h1>{playListDetails.fetching==false && details.title}</h1>
             <ul>
                 {
-                    playListDetails.fetched==true && details.songs.map(song => (
+                    playListDetails.fetching==true ?
+                     "Loading":
+                     playListDetails.fetched==true && 
+                     details.songs.map(song => (
                         <li>{song.songName}</li>
                     ))
                 }

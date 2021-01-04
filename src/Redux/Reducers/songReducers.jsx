@@ -2,7 +2,7 @@ import { PLAY_SONG,PAUSE_SONG,CHANGE_SONG } from "../Actions/songActions";
 
 const playingSong ={
     songPath:"",
-    play:true,
+    play:false,
     pause:false,
     currentTime:0,
     songDuration:0

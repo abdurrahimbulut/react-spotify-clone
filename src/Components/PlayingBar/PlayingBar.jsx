@@ -4,41 +4,49 @@ import { useSelector,useDispatch } from "react-redux";
 import { playSong,pauseSong,changeSong } from "../../Redux/Actions/songActions";
 
 const useAudio = () => {
-    const state = useSelector(state => state.songReducer);
     const dispatch = useDispatch();
+    const state = useSelector(state => state.songReducer);
     const [audio,setAudio] = useState(new Audio(``));
-    const [playing, setPlaying] = useState(false);
-  
-    const toggle = () => setPlaying(!playing);
+
+
+    
+    const toggle = () => {state.play ? dispatch(pauseSong()) : dispatch(playSong());};
+
+    //-
+    //her şarkı değiştiğinde oto play | not: burada bug var stateyi değiştirmedin
+    //audio.addEventListener('DOMAttrModified', audio.play(), true);
+    //-
+    useEffect(() => {
+        toggle()
+    },[audio]);
 
     const handleChangeSong=(path) => {
         dispatch(changeSong(`${process.env.PUBLIC_URL}${path}`));
     }
 
-    useEffect(() => {
+    useEffect( async () => {
         setAudio(new Audio(state.songPath));
-      },[state.songPath]);
+    },[state.songPath]);
 
     useEffect(() => {
-        playing ? audio.play() : audio.pause();
-      },[playing]);
-  
+        state.play ? audio.play() : audio.pause();
+    },[state.play]);
+    
+      
     useEffect(() => {
-        dispatch(changeSong(`${process.env.PUBLIC_URL}/songs/alla-beni-pulla-beni.mp3`));
-
-      audio.addEventListener('ended', () => setPlaying(false));
-      return () => {
-        audio.removeEventListener('ended', () => setPlaying(false));
-      };
+        audio.addEventListener('ended', () =>  dispatch(pauseSong()) );
+        return () => {
+            audio.removeEventListener('ended', () =>  dispatch(pauseSong()));
+        };
     }, []);
   
-    return [playing, toggle, handleChangeSong];
+    return [toggle, handleChangeSong];
 };
 
 
 const PlayingBar = (props) => {
     
-    const [playing, toggle,handleChangeSong] = useAudio();
+    const [toggle,handleChangeSong] = useAudio();
 
 
   
