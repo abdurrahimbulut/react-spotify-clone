@@ -19,7 +19,7 @@ const PlayListHeader = ({image,title,...props}) => {
                     <Text bold>ÇALMA LİSTESİ</Text>
                 </div>
                 <div className={Style.PlayListTitle}>
-                    <Text  >3. Çalma Listem</Text>
+                    <Text  >{title}</Text>
                 </div>
                 <div className={Style.User}>
                     <Text bold  >Abdurrahim</Text>

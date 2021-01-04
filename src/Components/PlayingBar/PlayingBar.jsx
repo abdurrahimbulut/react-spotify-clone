@@ -17,7 +17,8 @@ const useAudio = () => {
     //audio.addEventListener('DOMAttrModified', audio.play(), true);
     //-
     useEffect(() => {
-        toggle()
+        audio.play();
+        dispatch(playSong());
     },[audio]);
 
     const handleChangeSong=(path) => {
@@ -25,6 +26,8 @@ const useAudio = () => {
     }
 
     useEffect( async () => {
+        audio.pause();
+        dispatch(pauseSong());
         setAudio(new Audio(state.songPath));
     },[state.songPath]);
 
@@ -53,7 +56,7 @@ const PlayingBar = (props) => {
     return (
         <div className={styles.PlayingBar}>
             <button onClick={()=>toggle()} >Play/Pause</button>
-            <button onClick={()=>handleChangeSong("/songs/baris-manco-unutamadim.mp3")} >Değiştir</button>
+            <button onClick={()=>handleChangeSong("/songs/baris-manco-unutamadim.mp3")} >test</button> 
 
         </div>
     )

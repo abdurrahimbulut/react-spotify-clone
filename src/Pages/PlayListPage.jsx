@@ -8,26 +8,15 @@ const PlayListPage = () => {
     let {id}=useParams();
     const dispatch = useDispatch();
     const playListDetails = useSelector(state => state.playListDetailsReducer);
-    const details = playListDetails.details;
     useEffect(()=>{
         dispatch(getPlayListById(id));
     },[]);
 
     return (
         <div>
-            <PlayListHeader></PlayListHeader>
-            <PlayListSongs></PlayListSongs>
-            <h1>{playListDetails.fetching==false && details.title}</h1>
-            <ul>
-                {
-                    playListDetails.fetching==true ?
-                     "Loading":
-                     playListDetails.fetched==true && 
-                     details.songs.map(song => (
-                        <li>{song.songName}</li>
-                    ))
-                }
-            </ul>
+            <PlayListHeader title={playListDetails.details.title} />
+            <PlayListSongs playListDetails={playListDetails} ></PlayListSongs>
+            
         </div>
     )
 }
