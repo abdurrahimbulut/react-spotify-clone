@@ -1,21 +1,80 @@
 .Header{
     height: 340px;
     position: relative;
-    //background: linear-gradient(rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1));
+    display: flex;
+    padding: 0 32px 24px;
+    overflow: hidden;
 }
 
 
-.HeaderBack{
+.HeaderBackgroundColor{
     position: absolute;
     background-color: rgb(83, 83, 83);
     height: 100%;
     width: 100%;
+    top: 0;
+    left: 0;
+    
 }
 
-.HeaderContent{
+.HeaderLinearGradient{
     position: absolute;
     background: linear-gradient(transparent,rgba(0,0,0,.5));
     height: 100%;
     width: 100%;
+    top: 0;
+    left: 0;
 
+}
+
+.Image{
+    width: 232px;
+    min-width: 232px;
+    height: 232px;
+    margin-right: 24px;
+    align-self: flex-end;
+}
+
+.playListImage{
+    position: relative;
+    display: flex;
+    height: inherit;
+    background-color: #282828;
+    color: #7f7f7f;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 60px rgba(0,0,0,.5); 
+
+}
+.Type{
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.Content{
+    flex:1;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+.PlayListTitle{
+    margin-top: 8px;
+    display: flex;
+    height: 96px;
+    align-items: center;
+    &> span{
+        
+        font-size: 96px;
+        font-weight: 900;
+        letter-spacing: -.04em;
+        text-transform: none;
+    }
+}
+
+.User{
+    margin-top: 8px;
 }

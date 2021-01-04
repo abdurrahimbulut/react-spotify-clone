@@ -1,0 +1,36 @@
+.Root{
+    background: #121212;
+    isolation: isolate;
+    height: 100px;
+    position: relative;
+}
+
+.Background{
+    background-color: rgb(83, 83, 83);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.6)),to(#121212));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.ActionBar{
+    padding: 24px 32px;
+    height: 100px;
+}
+
+.PlayButton{
+    background-color: #1db954 !important;
+    border-radius: 9999px;
+    color: inherit;
+    border: none;
+    padding: 0px;
+    height: 58px;
+    width: 58px;
+    margin-right: 32px;
+}
+.MoreButton{
+    color: #fff ;
+}
