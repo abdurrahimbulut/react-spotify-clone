@@ -5,7 +5,7 @@ import styles from './PlayListItems.module.scss'
 import {useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import {getPlayList, getPlayListById} from "../../Redux/Actions/playListActions"
-import { isSelected } from '../../Redux/Actions/NavbarActions'
+import { isSelected } from '../../Redux/Actions/navbarActions'
 
 
 const PlayListItems = () => {
@@ -24,11 +24,13 @@ const PlayListItems = () => {
                     playList.map((pl)=>(
                         <li key={pl.id} className={styles.ListItem}>
                              <Button
-                              onClick={()=>dispatch(getPlayListById(pl.id))} 
-                              onClick={()=>dispatch(isSelected("/playlist/"+pl.id))} 
+                              onClick={()=>{ 
+                                    dispatch(getPlayListById(pl.id));
+                                    dispatch(isSelected("/playlist/"+pl.id));
+                                }} 
                               href={`/playlist/${pl.id}`} >
                                   <Text secondColor={selectedItem.selected==="/playlist/"+pl.id ? false: true}  >
-                                  {pl.title}
+                                    {pl.title}
                                   </Text>
                             </Button>
                         </li>

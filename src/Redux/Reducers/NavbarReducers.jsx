@@ -1,4 +1,4 @@
-import { CHANGE_SELECTED_ITEM } from "../Actions/NavbarActions";
+import { CHANGE_SELECTED_ITEM } from "../Actions/navbarActions.jsx";
 
 const navbarState = {
     selected:""
