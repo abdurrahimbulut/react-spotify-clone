@@ -5,7 +5,7 @@ import styles from './PlayListItems.module.scss'
 import {useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import {getPlayList, getPlayListById} from "../../Redux/Actions/playListActions"
-import { isSelected } from '../../Redux/Actions/navbarActions'
+import { isSelected } from '../../Redux/Actions/NavbarActions.jsx'
 
 
 const PlayListItems = () => {

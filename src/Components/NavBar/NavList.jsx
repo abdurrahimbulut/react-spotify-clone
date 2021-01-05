@@ -8,7 +8,7 @@ import Search from '../Icon/Search'
 import SearchActive from '../Icon/SearchActive'
 import Text from '../Typography/Text'
 import styles from './NavList.module.scss'
-import { isSelected } from '../../Redux/Actions/navbarActions.jsx'
+import { isSelected } from '../../Redux/Actions/NavbarActions.jsx'
 import { useDispatch, useSelector } from 'react-redux'
 
 
