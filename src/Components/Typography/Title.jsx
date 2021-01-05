@@ -4,7 +4,7 @@ import styles from './Title.module.scss'
 const Title = (props) => {
     return (
         <h2 className={styles.Title}>
-            {props.Title}
+            {props.children}
         </h2>
     )
 }

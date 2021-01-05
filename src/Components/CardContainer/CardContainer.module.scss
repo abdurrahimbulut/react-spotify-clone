@@ -1,0 +1,27 @@
+.Subtitle{
+    display: inline-block;
+    margin-top: 5px !important;
+    font-weight: 600 !important;
+}
+
+
+.SubtitleContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.SeeMore{
+    //text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .1em;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.CardContainer{
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+}

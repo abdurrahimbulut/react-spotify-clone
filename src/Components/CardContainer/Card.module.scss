@@ -1,0 +1,50 @@
+.Card{
+    cursor: pointer;
+    padding: 16px;
+    background-color: #181818;
+    border-radius: 4px;
+    transition: background-color .3s;
+    
+    &:hover{
+        background-color: #272727;
+        .PlayButton{
+            transform: translateY(-10px);
+            opacity: 1;
+        }
+    }
+}
+
+.Image{
+    margin-bottom: 16px;
+    position: relative;
+    &>img{
+        height: 100%;
+        width: 100%;
+        border-radius: 2px;
+    }
+}
+
+
+.PlayButton{
+        cursor: pointer;
+        position: absolute;
+        bottom: 0px;
+        right: 8px;
+        background-color: #1db954;
+        border-radius: 9999px;
+        color: inherit;
+        height: 40px;
+        width: 40px;
+        opacity: 0;
+        box-shadow: 0 8px 8px rgba(0,0,0,.3);
+        z-index: 2;
+        transition: all .3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    &>svg{
+        height: 16px !important;
+        width: 16px !important;
+    }
+}
