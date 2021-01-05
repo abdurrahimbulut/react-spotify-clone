@@ -1,8 +1,8 @@
 import {compose,applyMiddleware,createStore,combineReducers} from 'redux';
 import thunk from "redux-thunk";
-import {playListReducer,playListDetailsReducer} from "../Reducers/playListReducers"
-import { navbarSelectedItemReducer } from "../Reducers/navbarReducers";
-import { songReducer } from "../Reducers/songReducers";
+import {playListReducer,playListDetailsReducer} from "../Reducers/playListReducers.jsx"
+import { navbarSelectedItemReducer } from "../Reducers/navbarReducers.jsx";
+import { songReducer } from "../Reducers/songReducers.jsx";
 
 
 const middleware =compose(
