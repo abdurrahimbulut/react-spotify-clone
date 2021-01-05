@@ -7,8 +7,9 @@ import Card from './Card';
 const CardContainer = () => {
     return (
         <div>
-            <div className={Styles.TitleContainer}>
-                <Title>2020'nin En Popülerleri</Title>
+                <div className={Styles.TitleContainer}>
+                    <Title>2020'nin En Popülerleri</Title>
+                </div>
                 <div className={Styles.SubtitleContainer}>
                     <Text secondColor  className={Styles.Subtitle} >
                         2020'nin her türdeki en popüler şarkılarına dal
@@ -18,9 +19,12 @@ const CardContainer = () => {
                     </Text>
                 </div>
                 <div className={Styles.CardContainer}>
-                    <Card></Card>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
                 </div>
-            </div>
         </div>
     )
 }
