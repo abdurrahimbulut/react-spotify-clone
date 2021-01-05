@@ -5,6 +5,7 @@ import MoreIcon from '../Icon/MoreIcon'
 import Style from './PlayListSongs.module.scss'
 import {useDispatch } from 'react-redux'
 import {changeSong} from '../../Redux/Actions/songActions'
+import PlayListGrid from './PlayListGrid'
 
 const PlayListSongs = ({playListDetails}) => {
     const dispatch = useDispatch();
@@ -26,7 +27,8 @@ const PlayListSongs = ({playListDetails}) => {
                     ))
                 }
             </ul>
-            <h4>Çalmak istediğiniz şarkıya tıklayınız</h4>
+            <h4>Çalmak istediğiniz şarkıya tıklayınız. Ve şarkının yüklenmesini bekleyiniz.</h4>
+            <PlayListGrid></PlayListGrid>
 
         </div>
     )
