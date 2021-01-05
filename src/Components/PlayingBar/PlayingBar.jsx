@@ -25,7 +25,7 @@ const useAudio = () => {
         dispatch(changeSong(`${process.env.PUBLIC_URL}${path}`));
     }
 
-    useEffect( async () => {
+    useEffect(() => {
         audio.pause();
         dispatch(pauseSong());
         setAudio(new Audio(state.songPath));

@@ -19,7 +19,7 @@ function App() {
   return (
     <div className={styles.Main}>
       <Router>
-        <TopBar><h1>TopBar</h1></TopBar>
+        <TopBar />
         <NavBar><h1>Navbar</h1></NavBar>
         <PlayingBar><h1>Playing Bar</h1></PlayingBar>
         <MainView>
